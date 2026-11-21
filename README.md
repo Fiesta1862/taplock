@@ -34,6 +34,21 @@ the `BlockStrategy.capabilities` contract and by the stubs returning
 
 ---
 
+## Download
+
+A prebuilt **Android APK** is attached to the
+[v0.1.0 release](https://github.com/Fiesta1862/taplock/releases/tag/v0.1.0):
+
+[`taplock-0.1.0.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0.apk)
+(46 MB, supports arm64 / armv7 / x86_64)
+
+This is a demo build of the scaffold: the UI, NFC protocol and session logic
+work, but OS-level app blocking is not implemented yet. See the
+[release notes](https://github.com/Fiesta1862/taplock/releases/tag/v0.1.0)
+for the full status and SHA-256 checksum.
+
+---
+
 ## Repository layout
 
 ```
