@@ -47,6 +47,8 @@ work, but OS-level app blocking is not implemented yet. See the
 [release notes](https://github.com/Fiesta1862/taplock/releases/tag/v0.1.0)
 for the full status and SHA-256 checksum.
 
+A vector [UI preview](docs/app-preview.svg) shows the current screen layout.
+
 ---
 
 ## Repository layout

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="932" viewBox="0 0 430 932" role="img" aria-label="Taplock app UI preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f8fc"/>
+      <stop offset="1" stop-color="#eef0f7"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1a2340" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="430" height="932" fill="url(#bg)"/>
+
+  <!-- phone frame -->
+  <rect x="12" y="10" width="406" height="912" rx="30" fill="#ffffff" stroke="#d9deea" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="184" y="18" width="62" height="6" rx="3" fill="#dfe3ec"/>
+
+  <!-- status bar -->
+  <text x="38" y="45" font-family="Roboto, Arial, sans-serif" font-size="13" font-weight="600" fill="#232a3d">9:41</text>
+  <g fill="#232a3d" opacity="0.85">
+    <rect x="330" y="35" width="17" height="10" rx="2"/>
+    <rect x="352" y="33" width="16" height="12" rx="3"/>
+    <rect x="374" y="34" width="22" height="11" rx="3"/>
+    <rect x="377" y="37" width="15" height="5" rx="1" fill="#ffffff"/>
+  </g>
+
+  <!-- app bar -->
+  <line x1="12" y1="60" x2="418" y2="60" stroke="#edf0f6"/>
+  <text x="30" y="100" font-family="Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#171c2b">Taplock</text>
+  <g transform="translate(370,78)" stroke="#3d4661" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 0 V12"/><path d="M-5 7 L0 12 L5 7"/><path d="M-9 15 H9"/>
+  </g>
+
+  <!-- status / session card -->
+  <rect x="26" y="124" width="378" height="96" rx="14" fill="#ffffff" stroke="#e4e8f1"/>
+  <text x="44" y="158" font-family="Roboto, Arial, sans-serif" font-size="21" font-weight="700" fill="#1a2030">Not blocked</text>
+  <text x="44" y="184" font-family="Roboto, Arial, sans-serif" font-size="13" fill="#616b82">Tap a bound token to start a focus session.</text>
+
+  <!-- status message card -->
+  <rect x="26" y="234" width="378" height="68" rx="14" fill="#ffffff" stroke="#e4e8f1"/>
+  <text x="44" y="260" font-family="Roboto, Arial, sans-serif" font-size="13" font-weight="700" fill="#3b4359">Status</text>
+  <text x="44" y="283" font-family="Roboto, Arial, sans-serif" font-size="13" fill="#187a4c">OK: token bound.</text>
+
+  <!-- strategy card -->
+  <rect x="26" y="316" width="378" height="142" rx="14" fill="#ffffff" stroke="#e4e8f1"/>
+  <text x="44" y="344" font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="700" fill="#3b4359">Blocking strategy</text>
+  <rect x="42" y="358" width="346" height="44" rx="8" fill="#ffffff" stroke="#aab3c8"/>
+  <text x="56" y="385" font-family="Roboto, Arial, sans-serif" font-size="13" fill="#242b3d">Shizuku (recommended on Android)</text>
+  <path d="M360 376 l6 6 6 -6" stroke="#5d667d" stroke-width="2" fill="none"/>
+  <text x="44" y="423" font-family="Roboto, Arial, sans-serif" font-size="11" fill="#6c7590">Suspends packages via shell permission. Needs a one-time</text>
+  <text x="44" y="439" font-family="Roboto, Arial, sans-serif" font-size="11" fill="#6c7590">Shizuku grant, no root. Strong enforcement.</text>
+
+  <!-- tokens card -->
+  <rect x="26" y="472" width="378" height="216" rx="14" fill="#ffffff" stroke="#e4e8f1"/>
+  <text x="44" y="500" font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="700" fill="#3b4359">Tokens</text>
+
+  <circle cx="62" cy="529" r="17" fill="#e8ecff"/>
+  <g transform="translate(53,520)" stroke="#375ae4" stroke-width="1.8" fill="none" stroke-linecap="round">
+    <path d="M0 6 h4 l3 -5 3 10 3 -5 h4"/>
+    <path d="M2 1 h16"/>
+  </g>
+  <text x="90" y="527" font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="600" fill="#232a3d">Desk tag</text>
+  <text x="90" y="545" font-family="Roboto, Arial, sans-serif" font-size="11" fill="#6c7590">demo-token-01 → work</text>
+
+  <rect x="42" y="560" width="346" height="42" rx="8" fill="#ffffff" stroke="#c3cada"/>
+  <text x="56" y="586" font-family="Roboto, Arial, sans-serif" font-size="13" fill="#242b3d">Desk tag</text>
+  <path d="M360 576 l6 6 6 -6" stroke="#5d667d" stroke-width="2" fill="none"/>
+
+  <rect x="42" y="618" width="346" height="46" rx="23" fill="#375ae4"/>
+  <g transform="translate(66,632)" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round">
+    <path d="M9 4 v11"/><path d="M4 9 h10"/><circle cx="9" cy="9" r="8" opacity="0.35"/>
+  </g>
+  <text x="150" y="647" font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Simulate tag tap (toggle)</text>
+
+  <!-- next card, partially visible to imply scrolling -->
+  <rect x="26" y="702" width="378" height="230" rx="14" fill="#ffffff" stroke="#e4e8f1"/>
+  <text x="44" y="732" font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="700" fill="#3b4359">Bind a new token</text>
+  <rect x="42" y="748" width="346" height="44" rx="8" fill="#ffffff" stroke="#c3cada"/>
+  <text x="56" y="775" font-family="Roboto, Arial, sans-serif" font-size="13" fill="#8b94a8">Token ID (6-64 letters, digits, _ or -)</text>
+  <rect x="42" y="802" width="346" height="44" rx="8" fill="#ffffff" stroke="#c3cada"/>
+  <text x="56" y="829" font-family="Roboto, Arial, sans-serif" font-size="13" fill="#8b94a8">Label (optional)</text>
+
+  <!-- nav bar -->
+  <rect x="12" y="884" width="406" height="38" fill="#ffffff" opacity="0.96"/>
+  <line x1="12" y1="884" x2="418" y2="884" stroke="#edf0f6"/>
+  <g stroke="#7b849b" stroke-width="2" fill="none">
+    <path d="M52 902 h24 M52 908 h24"/>
+    <path d="M128 901 h22 l6 6 -6 6 h-22 z"/>
+    <path d="M208 900 a8 8 0 1 0 0 16 a8 8 0 1 0 0 -16"/>
+    <path d="M288 900 h22 v14 h-22 z M294 896 v4 M304 896 v4"/>
+  </g>
+</svg>
