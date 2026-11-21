@@ -7,7 +7,7 @@ import 'platform_channel_strategy.dart';
 /// The app must degrade gracefully until it is approved.
 class FamilyControlsBlockStrategy extends PlatformChannelStrategy {
   const FamilyControlsBlockStrategy()
-      super('app.taplock/blocks/familyControls');
+      : super('app.taplock/blocks/familyControls');
 
   @override
   String get id => 'familyControls';

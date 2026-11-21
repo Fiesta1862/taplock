@@ -4,6 +4,10 @@ analyzer:
   exclude:
     - "build/**"
     - ".dart_tool/**"
+  errors:
+    # Flutter 3.50 marks the long-standing Material imports and DropdownButton
+    # `value` parameter as deprecated. Keep compatibility with older SDKs.
+    deprecated_member_use: ignore
 
 linter:
   rules:

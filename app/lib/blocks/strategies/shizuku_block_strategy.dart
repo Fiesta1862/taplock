@@ -6,7 +6,7 @@ import 'platform_channel_strategy.dart';
 ///
 /// Native implementation: platform_overlays/android/.../ShizukuBlockStrategy.kt
 class ShizukuBlockStrategy extends PlatformChannelStrategy {
-  const ShizukuBlockStrategy() super('app.taplock/blocks/shizuku');
+  const ShizukuBlockStrategy() : super('app.taplock/blocks/shizuku');
 
   @override
   String get id => 'shizuku';

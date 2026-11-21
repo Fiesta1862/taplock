@@ -6,7 +6,7 @@ import 'platform_channel_strategy.dart';
 /// Only works when the app is device owner (ADB/QR provisioning). Intended for
 /// family devices, kiosks and people who want the strongest guarantee.
 class DeviceOwnerBlockStrategy extends PlatformChannelStrategy {
-  const DeviceOwnerBlockStrategy() super('app.taplock/blocks/deviceOwner');
+  const DeviceOwnerBlockStrategy() : super('app.taplock/blocks/deviceOwner');
 
   @override
   String get id => 'deviceOwner';
