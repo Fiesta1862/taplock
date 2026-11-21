@@ -36,16 +36,22 @@ the `BlockStrategy.capabilities` contract and by the stubs returning
 
 ## Download
 
-A prebuilt **Android APK** is attached to the
-[v0.1.0 release](https://github.com/Fiesta1862/taplock/releases/tag/v0.1.0):
+Prebuilt **Android APKs** are attached to the
+[v0.1.0 release](https://github.com/Fiesta1862/taplock/releases/tag/v0.1.0).
+They are signed with both V1 and V2 schemes for Android 7+ compatibility.
+Pick the variant for your device (arm64 is right for almost all modern phones):
 
-[`taplock-0.1.0.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0.apk)
-(46 MB, supports arm64 / armv7 / x86_64)
+| Variant | File |
+|---|---|
+| arm64 (most phones) | [`taplock-0.1.0-arm64-v8a.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0-arm64-v8a.apk) |
+| armv7 (older 32-bit) | [`taplock-0.1.0-armeabi-v7a.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0-armeabi-v7a.apk) |
+| x86_64 (emulator/tablet) | [`taplock-0.1.0-x86_64.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0-x86_64.apk) |
+| Universal (46 MB) | [`taplock-0.1.0.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0.apk) |
 
 This is a demo build of the scaffold: the UI, NFC protocol and session logic
 work, but OS-level app blocking is not implemented yet. See the
 [release notes](https://github.com/Fiesta1862/taplock/releases/tag/v0.1.0)
-for the full status and SHA-256 checksum.
+for the full status and SHA-256 checksums.
 
 A vector [UI preview](docs/app-preview.svg) shows the current screen layout.
 
