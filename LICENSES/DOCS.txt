@@ -1,0 +1,10 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Documentation in this repository (docs/**, README.md, CONTRIBUTING.md and
+.github/**) is licensed under CC BY-SA 4.0.
+Full text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+You may share and adapt the documentation, even commercially, with attribution
+and with derivative works licensed under the same terms.
