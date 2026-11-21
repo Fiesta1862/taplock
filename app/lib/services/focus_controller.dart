@@ -104,7 +104,7 @@ class FocusController {
 
     return CommandOutcome(
       true,
-      '${mode.name} is active via ${strategy.displayName}.',
+      '${mode.name} is active via ${strategy.displayName}. ${result.message}',
       session,
     );
   }
