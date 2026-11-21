@@ -23,7 +23,8 @@ Semantic Versioning.
 
 - OS enforcement strategies (Shizuku, Device Owner, Family Controls) are
   scaffolded stubs that report themselves unavailable. No release claims
-  enforcement that is not implemented.
+  enforcement that is not implemented. A clearly labelled simulation strategy
+  lets the full tap/session flow be tried without any blocking.
 - `taplock.example` is a placeholder domain and must be replaced before
   shipping.
 

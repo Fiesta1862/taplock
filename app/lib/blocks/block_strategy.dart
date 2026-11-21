@@ -3,7 +3,7 @@ import '../core/models.dart';
 /// How much enforcement a strategy actually provides.
 ///
 /// This is surfaced in the UI so nobody mistakes a reminder for a hard block.
-enum StrategyCapability { enforce, notify }
+enum StrategyCapability { enforce, notify, simulate }
 
 enum BlockState { active, inactive, unavailable }
 

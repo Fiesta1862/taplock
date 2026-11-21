@@ -18,7 +18,7 @@ This is an **early scaffold**. What works today:
 - ✅ Mode / token / session models with JSON export
 - ✅ `BlockStrategy` interface and a strategy registry
 - ✅ Controller that turns a tag tap into a focus session
-- ✅ Demo Flutter UI with a "simulate tap" button
+- ✅ Demo Flutter UI with a "simulate tap" button and an explicit simulation strategy that runs the full session flow without claiming any apps were blocked
 - ✅ Method-channel bridges for CoreNFC / Android NDEF intents
 
 What is intentionally **not** implemented yet:

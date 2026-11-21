@@ -12,6 +12,15 @@ behaviour.
 
 ## Tiers and known bypasses
 
+### Simulation tier (v0.1 scaffold)
+
+**Provides:** the complete tap → session → tap flow for trying the UX. It
+declares `StrategyCapability.simulate`, never `enforce`, and every result says
+explicitly that no apps were blocked.
+
+**Bypassable by:** everyone — there is no enforcement at all. That is the point:
+it is a demo mode, not a security boundary.
+
 ### Friction tier (accessibility overlay / notification)
 
 **Provides:** a visible interruption when a blocked app opens.

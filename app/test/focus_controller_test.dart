@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:taplock/blocks/block_strategy.dart';
 import 'package:taplock/blocks/strategy_registry.dart';
+import 'package:taplock/blocks/strategies/simulation_block_strategy.dart';
 import 'package:taplock/core/models.dart';
 import 'package:taplock/core/modes_repository.dart';
 import 'package:taplock/core/nfc_payload.dart';
@@ -96,5 +97,23 @@ void main() {
   test('rejects malformed payloads', () async {
     final outcome = await controller.handleTagUrl('not a url');
     expect(outcome.ok, isFalse);
+  });
+
+  test('falls back to the simulation strategy with an explicit warning',
+      () async {
+    final simRegistry = StrategyRegistry()
+      ..register(const SimulationBlockStrategy());
+    final simController = FocusController(
+      repository: repo,
+      strategies: simRegistry,
+    );
+
+    final outcome = await simController.handleTagUrl(
+      buildTagUrl(tokenId: 'token_01', action: NfcAction.lock),
+    );
+
+    expect(outcome.ok, isTrue);
+    expect(outcome.message, contains('Simulation only'));
+    expect(simController.activeSession!.strategyId, 'simulation');
   });
 }

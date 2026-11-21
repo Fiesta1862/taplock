@@ -5,6 +5,7 @@ import 'blocks/strategies/device_owner_block_strategy.dart';
 import 'blocks/strategies/family_controls_block_strategy.dart';
 import 'blocks/strategies/noop_block_strategy.dart';
 import 'blocks/strategies/shizuku_block_strategy.dart';
+import 'blocks/strategies/simulation_block_strategy.dart';
 import 'core/modes_repository.dart';
 import 'services/focus_controller.dart';
 import 'ui/home_screen.dart';
@@ -27,6 +28,7 @@ class _TaplockAppState extends State<TaplockApp> {
     _repository = InMemoryModesRepository.seed();
     _strategies = StrategyRegistry()
       ..register(const NoopBlockStrategy())
+      ..register(const SimulationBlockStrategy())
       ..register(const ShizukuBlockStrategy())
       ..register(const DeviceOwnerBlockStrategy())
       ..register(const FamilyControlsBlockStrategy());

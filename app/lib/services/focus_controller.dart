@@ -133,13 +133,16 @@ class FocusController {
   }
 
   Future<BlockStrategy?> _pickStrategy() async {
+    bool canRun(BlockStrategy strategy) =>
+        strategy.capabilities.contains(StrategyCapability.enforce) ||
+        strategy.capabilities.contains(StrategyCapability.simulate);
+
     final preferred = strategies.get(preferredStrategyId);
-    if (preferred != null && await preferred.isAvailable() &&
-        preferred.capabilities.contains(StrategyCapability.enforce)) {
+    if (preferred != null && canRun(preferred) && await preferred.isAvailable()) {
       return preferred;
     }
-    for (final candidate in strategies.enforcing) {
-      if (await candidate.isAvailable()) return candidate;
+    for (final candidate in strategies.all) {
+      if (canRun(candidate) && await candidate.isAvailable()) return candidate;
     }
     return null;
   }
