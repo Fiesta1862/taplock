@@ -23,6 +23,10 @@ app/windows/
 .DS_Store
 Thumbs.db
 
+# Build outputs
+*.apk
+build-output/
+
 # Secrets and signing
 *.jks
 *.keystore
