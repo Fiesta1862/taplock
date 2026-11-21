@@ -47,6 +47,7 @@ Pick the variant for your device (arm64 is right for almost all modern phones):
 | armv7 (older 32-bit) | [`taplock-0.1.0-armeabi-v7a.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0-armeabi-v7a.apk) |
 | x86_64 (emulator/tablet) | [`taplock-0.1.0-x86_64.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0-x86_64.apk) |
 | Universal (46 MB) | [`taplock-0.1.0.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0.apk) |
+| Debug-signed fallback (148 MB) | [`taplock-0.1.0-debug.apk`](https://github.com/Fiesta1862/taplock/releases/download/v0.1.0/taplock-0.1.0-debug.apk) |
 
 This is a demo build of the scaffold: the UI, NFC protocol and session logic
 work, but OS-level app blocking is not implemented yet. See the
